@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexura Academics - Mentor Role</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes glow {
+      0%,100%{filter: drop-shadow(0 0 5px rgba(99,102,241,0.6));opacity:1;}
+      50%{filter: drop-shadow(0 0 15px rgba(139,92,246,0.9));opacity:0.8;}
+    }
+    .animate-glow{animation:glow 3s ease-in-out infinite alternate;}
+    @keyframes fadeInSlow{from{opacity:0;transform:translateY(-10px);}to{opacity:1;transform:translateY(0);}}
+    .fade-in-slow{animation:fadeInSlow 2s ease forwards;}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .fade-in{animation:fadeIn 1.5s ease forwards;}
+    body {
+      background: linear-gradient(-45deg, #0a0a0f, #10102a, #1b0033, #0a0a0f);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      overflow-x:hidden;
+    }
+    @keyframes gradient {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+  </style>
+</head>
+<body class="text-white font-sans relative">
+
+  <!-- Header -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-transparent backdrop-blur-sm">
+    <div class="flex items-center space-x-3">
+      <img src="unfilled.png" alt="Nexura Academics Logo" class="h-16 w-16 md:h-20 md:w-20 max-w-[300px] rounded-md object-contain">
+      <span class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 text-transparent bg-clip-text">Nexura Academics</span>
+    </div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+      <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+      <a href="#" class="text-gray-300 hover:text-white transition">Programs</a>
+      <a href="apply.html" class="text-gray-300 hover:text-white transition">Join</a>
+    </div>
+  </nav>
+
+  <!-- Mentor Hero Section -->
+  <section class="flex flex-col items-center justify-center h-[60vh] px-10 md:px-20 text-center fade-in">
+    <h1 class="text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-300 text-transparent bg-clip-text mb-6">
+      Become a Mentor
+    </h1>
+    <p class="text-gray-300 text-lg md:text-xl mb-8 max-w-3xl">
+      Guide the next generation of innovators. Share your knowledge in AI, Web Development, Cybersecurity, and Embedded Systems. Mentor students while enhancing your own leadership and technical skills.
+    </p>
+    <a href="mentor-apply.html" class="bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-full text-lg font-medium transition shadow-md hover:shadow-purple-500/50">
+      Apply Now
+    </a>
+  </section>
+
+  <!-- Step-by-Step Mentor Journey -->
+  <section class="py-24 px-6 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a1a2f] text-white relative">
+    <div class="max-w-6xl mx-auto text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 text-transparent bg-clip-text">
+        Your Mentorship Journey
+      </h2>
+      <p class="mt-4 text-gray-400 text-lg md:text-xl max-w-3xl mx-auto">
+        Follow these steps to become an impactful mentor at Nexura Academics and help shape the innovators of tomorrow.
+      </p>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto space-y-24">
+
+      <!-- Step 1 -->
+      <div class="flex flex-col md:flex-row items-center md:justify-start">
+        <div class="bg-purple-600 rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold">1</div>
+        <div class="md:ml-6 mt-4 md:mt-0">
+          <p class="text-lg font-semibold">Submit Application</p>
+          <p class="mt-2 text-gray-400 max-w-md">Fill out your mentor application with experience, skills, and areas you can guide.</p>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flex flex-col md:flex-row items-center md:justify-end">
+        <div class="md:order-2 bg-indigo-600 rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold">2</div>
+        <div class="md:mr-6 mt-4 md:mt-0 text-right md:text-right md:order-1">
+          <p class="text-lg font-semibold">Get Reviewed</p>
+          <p class="mt-2 text-gray-400 max-w-md inline-block">Our team evaluates your application to match you with students based on skills and expertise.</p>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flex flex-col md:flex-row items-center md:justify-start">
+        <div class="bg-cyan-600 rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold">3</div>
+        <div class="md:ml-6 mt-4 md:mt-0">
+          <p class="text-lg font-semibold">Mentorship Begins</p>
+          <p class="mt-2 text-gray-400 max-w-md">Guide students through projects, learning sessions, and research while providing continuous support.</p>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="flex flex-col md:flex-row items-center md:justify-end">
+        <div class="md:order-2 bg-green-600 rounded-full w-20 h-20 flex items-center justify-center text-2xl font-bold">4</div>
+        <div class="md:mr-6 mt-4 md:mt-0 text-right md:text-right md:order-1">
+          <p class="text-lg font-semibold">Project Showcase</p>
+          <p class="mt-2 text-gray-400 max-w-md inline-block">Students present their work. You celebrate their success and provide constructive feedback for growth.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-16 bg-[#0a0a0f] w-full py-8 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0">
+      <div class="mb-6 md:mb-0 text-center md:text-left">
+        <h2 class="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">Nexura Academics</h2>
+        <p class="text-gray-500 mt-2 text-sm">Empowering the next generation of innovators in Computer Science.</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://www.linkedin.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">LinkedIn</a>
+        <a href="https://www.instagram.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">Instagram</a>
+        <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">WhatsApp</a>
+        <a href="https://twitter.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

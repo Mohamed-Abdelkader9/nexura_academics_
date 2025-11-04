@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Nexura Academics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in { animation: fadeIn 1.5s ease forwards; }
+    body { background: #0a0a0f; color: white; font-family: sans-serif; overflow-x: hidden; }
+  </style>
+</head>
+<body class="relative">
+
+  <!-- Header -->
+  <nav class="flex justify-between items-center px-8 py-4 bg-transparent backdrop-blur-sm border-b border-gray-700">
+    <div class="flex items-center space-x-3">
+      <img src="Unfilled.png" alt="Nexura Academics Logo" 
+           class="h-16 w-16 md:h-20 md:w-20 max-w-[300px] rounded-md object-contain">
+      <span class="text-2xl md:text-3xl font-bold text-indigo-400">Nexura Academics</span>
+    </div>
+    <div class="space-x-6 hidden md:flex">
+      <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+      <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+      <a href="programs.html" class="text-gray-300 hover:text-white transition">Programs</a>
+      <a href="apply.html" class="text-gray-300 hover:text-white transition">Join</a>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+<section class="flex flex-col md:flex-row items-center justify-center py-24 px-6 md:px-20 fade-in">
+
+  <!-- Photo + Title -->
+  <div class="md:w-1/2 flex flex-col items-center mb-10 md:mb-0">
+    <img src="mohamed_abdelkader.jpg" alt="Portrait of Mohamed Abdelkader, Founder of Nexura Academics" 
+         class="rounded-3xl w-80 md:w-[450px] shadow-2xl border-4 border-indigo-500 hover:scale-105 transition transform object-cover">
+    <h2 class="text-xl text-gray-400 italic mt-4">Founder of Nexura Academics</h2>
+  </div>
+
+  <!-- Bio -->
+  <div class="md:w-1/2 text-left space-y-6 md:pl-12">
+    <h1 class="text-4xl md:text-5xl font-bold text-indigo-400">Mohamed Abdelkader</h1>
+    
+    <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+      My journey in Computer Science began as a curious mind wanting to understand the intricacies of how technology was changing society around us. Over the years I became immersed in AI, Embedded Systems, Cybersecurity, and Web Development while beginning to understand the infinite potential in innovation. <strong>Nexura Academics</strong> was created out of a passion to allow young minds the opportunity to explore, learn, and develop meaningful solutions to complex issues while providing the encouragement, mentoring, and opportunities that I wished I had available to me in the beginning.
+    </p>
+
+    <p class="text-gray-300 text-lg md:text-xl leading-relaxed">
+      I believe knowledge is most valuable when it is shared, and technology can be a force for good for the advancement of society. Through Nexura Academics, I hope to create a community of inspired learners, innovators, and problem-solvers who are ready to tackle daunting issues of the future. Each project, mentorship, or program is tailored to promote curiosity, develop relevant skills, and cultivate a love of learning.
+    </p>
+
+    <!-- Social Media Icons -->
+    <div class="flex gap-6 mt-4">
+        <a href="https://www.linkedin.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 7h4.55v16H.22V7zM8.99 7h4.36v2.34h.06c.61-1.16 2.11-2.34 4.33-2.34 4.63 0 5.48 3.05 5.48 7.02V23h-4.55v-7.52c0-1.8-.03-4.11-2.5-4.11-2.5 0-2.88 1.95-2.88 3.98V23H8.99V7z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.584.012 4.85.07 1.17.055 1.97.24 2.43.4a4.92 4.92 0 011.77 1.16 4.92 4.92 0 011.16 1.77c.16.46.345 1.26.4 2.43.058 1.265.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.97-.4 2.43a4.92 4.92 0 01-1.16 1.77 4.92 4.92 0 01-1.77 1.16c-.46.16-1.26.345-2.43.4-1.265.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.97-.24-2.43-.4a4.92 4.92 0 01-1.77-1.16 4.92 4.92 0 01-1.16-1.77c-.16-.46-.345-1.26-.4-2.43C2.172 15.584 2.16 15.2 2.16 12s.012-3.584.07-4.85c.055-1.17.24-1.97.4-2.43a4.92 4.92 0 011.16-1.77 4.92 4.92 0 011.77-1.16c.46-.16 1.26-.345 2.43-.4C8.416 2.172 8.8 2.16 12 2.16zm0-2.16C8.737 0 8.332.012 7.052.07 5.765.127 4.892.314 4.13.525a7.077 7.077 0 00-2.56 1.07 7.077 7.077 0 00-1.07 2.56c-.21.762-.398 1.635-.455 2.922C.012 8.332 0 8.737 0 12s.012 3.668.07 4.948c.057 1.287.245 2.16.455 2.922a7.077 7.077 0 001.07 2.56 7.077 7.077 0 002.56 1.07c.762.21 1.635.398 2.922.455C8.332 23.988 8.737 24 12 24s3.668-.012 4.948-.07c1.287-.057 2.16-.245 2.922-.455a7.077 7.077 0 002.56-1.07 7.077 7.077 0 001.07-2.56c.21-.762.398-1.635.455-2.922C23.988 15.668 24 15.263 24 12s-.012-3.668-.07-4.948c-.057-1.287-.245-2.16-.455-2.922a7.077 7.077 0 00-1.07-2.56 7.077 7.077 0 00-2.56-1.07c-.762-.21-1.635-.398-2.922-.455C15.668.012 15.263 0 12 0z"/><path d="M12 5.838a6.162 6.162 0 106.162 6.162A6.169 6.169 0 0012 5.838zm0 10.162a3.999 3.999 0 113.999-3.999A4.005 4.005 0 0112 16zm6.406-11.845a1.44 1.44 0 11-1.44-1.44 1.439 1.439 0 011.44 1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.94 11.94 0 01-1.58-5.95C.163 5.343 5.523 0 12 0c3.18 0 6.16 1.24 8.41 3.48a11.937 11.937 0 013.49 8.47c-.003 6.477-5.346 11.837-11.823 11.837a11.946 11.946 0 01-5.95-1.58L.057 24zm6.597-3.807c1.74.994 3.214 1.591 5.392 1.592 5.448 0 9.875-4.426 9.878-9.869.002-2.635-1.026-5.104-2.884-6.957a9.862 9.862 0 00-6.953-2.89c-5.45 0-9.876 4.425-9.879 9.872-.001 2.664 1.046 5.15 2.946 7.028l-.688 2.509 2.54-.676zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.296-.148-1.754-.868-2.027-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.942 1.162-.173.198-.347.223-.644.074-.296-.148-1.25-.46-2.38-1.464-.88-.785-1.472-1.754-1.645-2.05-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.074-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.26.489 1.69.626.712.226 1.36.194 1.872.118.571-.085 1.754-.718 2.002-1.41.248-.694.248-1.29.173-1.41z"/></svg>
+        </a>
+        <a href="https://twitter.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.608 1.794-1.574 2.163-2.723-.949.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.932 2.208-4.932 4.932 0 .39.045.765.127 1.124C7.728 8.087 4.1 6.128 1.671 3.149c-.427.733-.666 1.58-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.247-2.228-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.112-.849.171-1.296.171-.317 0-.626-.03-.927-.086.627 1.956 2.444 3.377 4.6 3.417-1.68 1.318-3.809 2.104-6.102 2.104-.395 0-.779-.023-1.158-.068 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14.001-7.496 14.001-13.986 0-.21 0-.423-.015-.634.961-.694 1.8-1.562 2.46-2.549z"/></svg>
+        </a>
+    </div>
+  </div>
+
+</section>
+
+
+  <!-- Footer -->
+    <footer class="mt-16 bg-[#0a0a0f] w-full py-8 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0">
+        <div class="mb-6 md:mb-0 text-center md:text-left">
+        <h2 class="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">Nexora</h2>
+        <p class="text-gray-500 mt-2 text-sm">Empowering the next generation of innovators in Computer Science.</p>
+        </div>
+        <div class="flex gap-6">
+        <a href="https://www.linkedin.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 7h4.55v16H.22V7zM8.99 7h4.36v2.34h.06c.61-1.16 2.11-2.34 4.33-2.34 4.63 0 5.48 3.05 5.48 7.02V23h-4.55v-7.52c0-1.8-.03-4.11-2.5-4.11-2.5 0-2.88 1.95-2.88 3.98V23H8.99V7z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.584.012 4.85.07 1.17.055 1.97.24 2.43.4a4.92 4.92 0 011.77 1.16 4.92 4.92 0 011.16 1.77c.16.46.345 1.26.4 2.43.058 1.265.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.055 1.17-.24 1.97-.4 2.43a4.92 4.92 0 01-1.16 1.77 4.92 4.92 0 01-1.77 1.16c-.46.16-1.26.345-2.43.4-1.265.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.055-1.97-.24-2.43-.4a4.92 4.92 0 01-1.77-1.16 4.92 4.92 0 01-1.16-1.77c-.16-.46-.345-1.26-.4-2.43C2.172 15.584 2.16 15.2 2.16 12s.012-3.584.07-4.85c.055-1.17.24-1.97.4-2.43a4.92 4.92 0 011.16-1.77 4.92 4.92 0 011.77-1.16c.46-.16 1.26-.345 2.43-.4C8.416 2.172 8.8 2.16 12 2.16zm0-2.16C8.737 0 8.332.012 7.052.07 5.765.127 4.892.314 4.13.525a7.077 7.077 0 00-2.56 1.07 7.077 7.077 0 00-1.07 2.56c-.21.762-.398 1.635-.455 2.922C.012 8.332 0 8.737 0 12s.012 3.668.07 4.948c.057 1.287.245 2.16.455 2.922a7.077 7.077 0 001.07 2.56 7.077 7.077 0 002.56 1.07c.762.21 1.635.398 2.922.455C8.332 23.988 8.737 24 12 24s3.668-.012 4.948-.07c1.287-.057 2.16-.245 2.922-.455a7.077 7.077 0 002.56-1.07 7.077 7.077 0 001.07-2.56c.21-.762.398-1.635.455-2.922C23.988 15.668 24 15.263 24 12s-.012-3.668-.07-4.948c-.057-1.287-.245-2.16-.455-2.922a7.077 7.077 0 00-1.07-2.56 7.077 7.077 0 00-2.56-1.07c-.762-.21-1.635-.398-2.922-.455C15.668.012 15.263 0 12 0z"/><path d="M12 5.838a6.162 6.162 0 106.162 6.162A6.169 6.169 0 0012 5.838zm0 10.162a3.999 3.999 0 113.999-3.999A4.005 4.005 0 0112 16zm6.406-11.845a1.44 1.44 0 11-1.44-1.44 1.439 1.439 0 011.44 1.44z"/></svg>
+        </a>
+        <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.94 11.94 0 01-1.58-5.95C.163 5.343 5.523 0 12 0c3.18 0 6.16 1.24 8.41 3.48a11.937 11.937 0 013.49 8.47c-.003 6.477-5.346 11.837-11.823 11.837a11.946 11.946 0 01-5.95-1.58L.057 24zm6.597-3.807c1.74.994 3.214 1.591 5.392 1.592 5.448 0 9.875-4.426 9.878-9.869.002-2.635-1.026-5.104-2.884-6.957a9.862 9.862 0 00-6.953-2.89c-5.45 0-9.876 4.425-9.879 9.872-.001 2.664 1.046 5.15 2.946 7.028l-.688 2.509 2.54-.676zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.296-.148-1.754-.868-2.027-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.942 1.162-.173.198-.347.223-.644.074-.296-.148-1.25-.46-2.38-1.464-.88-.785-1.472-1.754-1.645-2.05-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.074-.148-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.26.489 1.69.626.712.226 1.36.194 1.872.118.571-.085 1.754-.718 2.002-1.41.248-.694.248-1.29.173-1.41z"/></svg>
+        </a>
+        <a href="https://twitter.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.954 4.569c-.885.392-1.83.656-2.825.775 1.014-.608 1.794-1.574 2.163-2.723-.949.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.932 2.208-4.932 4.932 0 .39.045.765.127 1.124C7.728 8.087 4.1 6.128 1.671 3.149c-.427.733-.666 1.58-.666 2.475 0 1.708.87 3.213 2.188 4.096-.807-.026-1.566-.247-2.228-.616v.062c0 2.385 1.693 4.374 3.946 4.827-.413.112-.849.171-1.296.171-.317 0-.626-.03-.927-.086.627 1.956 2.444 3.377 4.6 3.417-1.68 1.318-3.809 2.104-6.102 2.104-.395 0-.779-.023-1.158-.068 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14.001-7.496 14.001-13.986 0-.21 0-.423-.015-.634.961-.694 1.8-1.562 2.46-2.549z"/></svg>
+        </a>
+        </div>
+    </div>
+    </footer>
+
+</body>
+</html>

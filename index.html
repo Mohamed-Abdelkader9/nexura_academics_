@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexura Academics</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 5px rgba(99,102,241,0.6)); opacity: 1; }
+        50% { filter: drop-shadow(0 0 15px rgba(139,92,246,0.9)); opacity: 0.8; }
+    }
+    .animate-glow {
+        animation: glow 3s ease-in-out infinite alternate;
+    }
+    @keyframes fadeInSlow {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-slow {
+        animation: fadeInSlow 2s ease forwards;
+    }
+    body {
+      background: linear-gradient(-45deg, #0a0a0f, #10102a, #1b0033, #0a0a0f);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      overflow-x: hidden;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      animation: floatParticle 12s infinite ease-in-out;
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0) translateX(0); opacity: 0.3; }
+      50% { transform: translateY(-50px) translateX(20px); opacity: 0.7; }
+      100% { transform: translateY(0) translateX(0); opacity: 0.3; }
+    }
+    @keyframes floatText {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease forwards;
+    }
+  </style>
+</head>
+<body class="text-white font-sans relative">
+
+<nav class="flex justify-between items-center px-8 py-4 bg-transparent backdrop-blur-sm">
+  <div class="flex items-center space-x-3">
+    <img src="logo/unfilled.png" alt="Nexura Academics Logo" class="h-16 w-16 md:h-20 md:w-20 max-w-[300px] rounded-md object-contain">
+    <span class="text-2xl md:text-3xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 text-transparent bg-clip-text">Nexura Academics</span>
+  </div>
+  <div class="space-x-6 hidden md:flex">
+    <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+    <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+    <a href="#" class="text-gray-300 hover:text-white transition">Programs</a>
+    <a href="apply.html" class="text-gray-300 hover:text-white transition">Join</a>
+  </div>
+</nav>
+
+<div class="particle" style="top:20%; left:10%; animation-delay: 0s;"></div>
+<div class="particle" style="top:60%; left:30%; animation-delay: 2s;"></div>
+<div class="particle" style="top:40%; left:70%; animation-delay: 4s;"></div>
+<div class="particle" style="top:80%; left:80%; animation-delay: 6s;"></div>
+<div class="particle" style="top:10%; left:90%; animation-delay: 1s;"></div>
+
+<section class="flex flex-col md:flex-row items-center justify-between h-[80vh] px-10 md:px-20 relative z-10 fade-in">
+  <div class="text-left space-y-6 md:w-1/2">
+    <h2 class="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 text-transparent bg-clip-text animate-[floatText_6s_ease-in-out_infinite]">Nexura Academics</h2>
+    <p class="text-gray-300 text-lg md:text-xl italic">Empowering youth to innovate, research, and redefine technology.</p>
+    <a href="apply.html" target="_blank" class="bg-indigo-600 hover:bg-indigo-700 px-8 py-3 rounded-full text-lg font-medium transition shadow-md hover:shadow-indigo-500/50 inline-block">Apply as Mentor</a>
+    <a href="mentor.html" class="mt-4 bg-purple-600 hover:bg-purple-700 px-8 py-3 rounded-full text-lg font-medium transition shadow-md hover:shadow-purple-500/50 inline-block">Mentor Role</a>
+  </div>
+
+  <div class="grid grid-cols-2 gap-6 mt-10 md:mt-0 md:w-1/2">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-indigo-400">
+      <h3 class="text-xl font-semibold text-indigo-300 mb-2">Artificial Intelligence</h3>
+      <p class="text-gray-400 text-sm">Explore the future of intelligent systems and machine learning.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-cyan-400">
+      <h3 class="text-xl font-semibold text-cyan-300 mb-2">Web Development</h3>
+      <p class="text-gray-400 text-sm">Build interactive and modern web experiences with cutting-edge tools.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-green-400">
+      <h3 class="text-xl font-semibold text-green-300 mb-2">Embedded Systems</h3>
+      <p class="text-gray-400 text-sm">Integrate hardware and software to create smart embedded devices.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-pink-400">
+      <h3 class="text-xl font-semibold text-pink-300 mb-2">Cybersecurity</h3>
+      <p class="text-gray-400 text-sm">Learn to defend systems, analyze threats, and secure digital networks.</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 px-10 md:px-20 fade-in">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-6 text-indigo-400">About Nexura Academics</h2>
+    <p class="text-gray-300 text-lg md:text-xl mb-10">Nexura Academics is a mentorship platform empowering students to explore, learn, and innovate in the fields of Artificial Intelligence, Embedded Systems, Web Development, and Cybersecurity.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:scale-105 transition transform">
+        <h3 class="text-xl font-semibold text-indigo-300 mb-2">Innovation</h3>
+        <p class="text-gray-400 text-sm">Encouraging creative solutions and futuristic projects in technology.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:scale-105 transition transform">
+        <h3 class="text-xl font-semibold text-purple-300 mb-2">Collaboration</h3>
+        <p class="text-gray-400 text-sm">Connecting mentors and mentees to work together on impactful projects.</p>
+      </div>
+      <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-6 hover:scale-105 transition transform">
+        <h3 class="text-xl font-semibold text-cyan-300 mb-2">Learning</h3>
+        <p class="text-gray-400 text-sm">Providing hands-on guidance to develop real-world technical skills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24 px-6 md:px-20 bg-gradient-to-b from-[#0a0a0f] to-[#1a1a2f] text-white">
+  <div class="max-w-6xl mx-auto text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 text-transparent bg-clip-text">Our Plan</h2>
+    <p class="mt-4 text-gray-400 text-lg md:text-xl">A step-by-step journey to empower young innovators through Nexura Academics.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-6xl mx-auto">
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-indigo-400">
+      <h3 class="text-2xl font-semibold text-indigo-300 mb-2">Step 1: Application</h3>
+      <p class="text-gray-400 text-sm">Students and mentors submit their applications, sharing their background, skills, and areas of interest.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-purple-400">
+      <h3 class="text-2xl font-semibold text-purple-300 mb-2">Step 2: Selection</h3>
+      <p class="text-gray-400 text-sm">Our team reviews applications carefully to match students with mentors based on interests and expertise.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-cyan-400">
+      <h3 class="text-2xl font-semibold text-cyan-300 mb-2">Step 3: Mentorship</h3>
+      <p class="text-gray-400 text-sm">Mentors guide students through projects, learning sessions, and skill-building exercises in AI, Web, and more.</p>
+    </div>
+    <div class="bg-white/5 border border-white/10 rounded-2xl p-8 text-center backdrop-blur-sm hover:scale-105 transition transform hover:border-green-400">
+      <h3 class="text-2xl font-semibold text-green-300 mb-2">Step 4: Showcase</h3>
+      <p class="text-gray-400 text-sm">Students present their completed projects and research outcomes, gaining recognition and opportunities for growth.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-16 bg-[#0a0a0f] w-full py-8 border-t border-gray-800">
+  <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6 md:px-0">
+    <div class="mb-6 md:mb-0 text-center md:text-left">
+      <h2 class="text-2xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-300 bg-clip-text text-transparent">Nexura Academics</h2>
+      <p class="text-gray-500 mt-2 text-sm">Empowering the next generation of innovators in Computer Science.</p>
+    </div>
+    <div class="flex gap-6">
+      <a href="https://www.linkedin.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+        <!-- LinkedIn SVG -->
+      </a>
+      <a href="https://www.instagram.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+        <!-- Instagram SVG -->
+      </a>
+      <a href="https://wa.me/YOUR_NUMBER" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+        <!-- WhatsApp SVG -->
+      </a>
+      <a href="https://twitter.com/YOUR_LINK" target="_blank" class="text-gray-400 hover:text-white transition transform hover:scale-110">
+        <!-- Twitter SVG -->
+      </a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
